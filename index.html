@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conversor Decimal-Binário</title>
+	<style>
+		body {
+			background-color: #212121;
+			color: #fff;
+			font-family: sans-serif;
+		}
+
+		h1 {
+			margin-bottom: 1rem;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 0.5rem;
+		}
+
+		input[type="number"], input[type="text"] {
+			padding: 0.5rem;
+			border-radius: 0.25rem;
+			border: none;
+			background-color: #333;
+			color: #fff;
+			font-size: 1rem;
+			margin-bottom: 1rem;
+			width: 100%;
+			box-sizing: border-box;
+			text-align: right;
+		}
+
+		/* #binary {
+			text-align: right; 
+		} */
+
+		button {
+			padding: 0.5rem 1rem;
+			border-radius: 0.25rem;
+			border: none;
+			background-color: #4CAF50;
+			color: #fff;
+			font-size: 1rem;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #3e8e41;
+		}
+
+		.error {
+			color: red;
+			font-size: 0.8rem;
+			margin-top: 0.5rem;
+		}
+	</style>
+</head>
+<body>
+	<h1>Conversor Decimal-Binário</h1>
+
+	<form>
+		<label for="decimal">Decimal:</label>
+		<input type="number" id="decimal" placeholder="Digite um número decimal">
+
+		<label for="binary">Binário:</label>
+		<input type="text" id="binary" placeholder="Digite um número binário">
+
+		<label for="bits">Bits:</label>
+		<input type="number" id="bits" min="1" max="32" value="8">
+
+		<button type="button" id="convertButton">Converter</button>
+
+		<p class="error" id="errorMessage"></p>
+	</form>
+
+		<footer>
+			<p>Desenvolvido por ChatGPT</p>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
